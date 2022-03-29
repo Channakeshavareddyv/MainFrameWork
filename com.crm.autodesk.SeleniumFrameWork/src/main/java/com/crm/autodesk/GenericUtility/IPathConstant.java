@@ -17,4 +17,31 @@ public interface IPathConstant {
 	 public String USERNAME="root";
 	 public String PASSWORD="root";
 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
+	 
 }
