@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="DistrubutedTest 1">
+    <classes>
+      <class name="com.crm.autodesk.leadtest.ConvertLeadToOpertunitiesBySelectingOrganisationAndContactChekboxsAndFeelAllTheMandatoryFieldsTest"/>
+      <class name="com.crm.autodesk.leadtest.CreateLeadWithValidMandatoryDetailsAndDuplicateTheLeadFromLeadsInformationPageAndEditTheDetailsAndThenDeleteTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="DistrubutedTest 2">
+    <classes>
+      <class name="com.crm.autodesk.contacttest.CreateContactWithOrganisationTest"/>
+      <class name="com.crm.autodesk.leadtest.ConvertLeadToOpertunitiesBySelectingOpertunityAndContactTheChekboxsAndFeelAllTheMandatoryFieldsTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="DistrubutedTest 3">
+    <classes>
+      <class name="com.crm.autodesk.organsationtest.CreateOrganisationTest"/>
+      <class name="com.crm.autodesk.organsationtest.CreateOrganisationWithIndustryTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test thread-count="5" name="DistrubutedTest 4">
+    <classes>
+      <class name="com.crm.autodesk.contacttest.CreateContactTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
