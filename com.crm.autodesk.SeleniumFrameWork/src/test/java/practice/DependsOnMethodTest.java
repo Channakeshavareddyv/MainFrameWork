@@ -15,7 +15,7 @@ public class DependsOnMethodTest {
 	@Test(dependsOnMethods = "createLeadTest")
 	public void modifyLeadTest() {
 		System.out.println("Running modifyLeadTest");
-		Assert.fail();
+		//Assert.fail();
 	}
 	
 	@Test(dependsOnMethods="modifyLeadTest")

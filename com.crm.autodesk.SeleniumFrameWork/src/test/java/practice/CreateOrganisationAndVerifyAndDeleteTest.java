@@ -81,25 +81,26 @@ public class CreateOrganisationAndVerifyAndDeleteTest {
 		Thread.sleep(5000);
 		driver.findElement(By.linkText("Organizations")).click();
 	
-		for(;;) {
-			List<WebElement> ActualorganNames = driver.findElements(By.xpath("//a[contains(@href,'index.php?module=Accounts&parenttab=Marketing&action=DetailView&record')]"));
-			for (WebElement ele : ActualorganNames) {
-				System.out.println(ele.getText());
-			  }
-			
-			try {
-				driver.findElement(By.xpath("//img[@src='themes/images/next.gif']")).click();
-				Thread.sleep(3000);
-			}catch(Exception e)	{
-				//if(ActualorganNames.equals(orgName)) {
-					driver.findElement(By.xpath("//table[@class='lvt small']/tbody/tr[last()]/td[3]")).click();
-					driver.findElement(By.name("Delete")).click();
-					Thread.sleep(5000);
-					WebDriverUtility webU=new WebDriverUtility();
-					webU.switchToAlertWindowAndAccpect(driver);
-				//}
-				break;
-			}
-		}
+//		for(;;) {
+//			List<WebElement> ActualorganNames = driver.findElements(By.xpath("//a[contains(@href,'index.php?module=Accounts&parenttab=Marketing&action=DetailView&record')]"));
+//			for (WebElement ele : ActualorganNames) {
+//				System.out.println(ele.getText());
+//			  }
+//			
+//			try {
+//				driver.findElement(By.xpath("//img[@src='themes/images/next.gif']")).click();
+//				Thread.sleep(3000);
+//			}catch(Exception e)	{
+//				//if(ActualorganNames.equals(orgName)) {
+//					driver.findElement(By.xpath("//table[@class='lvt small']/tbody/tr[last()]/td[3]")).click();
+//					driver.findElement(By.name("Delete")).click();
+//					Thread.sleep(5000);
+//					WebDriverUtility webU=new WebDriverUtility();
+//					webU.switchToAlertWindowAndAccpect(driver);
+//				//}
+//				break;
+//			}
+//		}
+		driver.quit();
 	}
 }

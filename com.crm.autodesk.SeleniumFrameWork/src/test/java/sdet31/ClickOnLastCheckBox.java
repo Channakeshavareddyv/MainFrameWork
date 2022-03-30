@@ -21,6 +21,7 @@ public class ClickOnLastCheckBox {
 		
 		driver.findElement(By.linkText("Organizations")).click();
 		driver.findElement(By.xpath("//table[@class='lvt small']/tbody/tr[last()]/td[1]")).click();
+		driver.quit();
 
         }
 

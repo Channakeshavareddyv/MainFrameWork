@@ -71,7 +71,7 @@ public class BookingHotelInGoibiboTest {
  	 driver.findElement(By.xpath("//button[text()='Done']")).click();
  	 
  	 driver.findElement(By.xpath("//button[text()='Search Hotels']")).click();	 
-  	 
+  	 driver.quit();
 	}	
 		
    }

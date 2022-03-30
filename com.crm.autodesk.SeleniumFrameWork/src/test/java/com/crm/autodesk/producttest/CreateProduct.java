@@ -83,15 +83,15 @@ public class CreateProduct {
     	 CreatingNewProductPage creaNewPro=new CreatingNewProductPage(driver);
          creaNewPro.createProduct(PRODUCTNAME);
     	 
-         ProductInformationPage proinfo=new ProductInformationPage(driver);
-         String ACTUALPRODUCTNAME = proinfo.verfiyProductInformation();
-    	 
-    	 if(ACTUALPRODUCTNAME.contains(PRODUCTNAME)) {
-    		 System.out.println("PASS : PRODUCT IS CREATED");
-    	 }
-    	 else {
-    		 System.out.println("PASS : PRODUCT IS NOT CREATED");
-    	 }
+//         ProductInformationPage proinfo=new ProductInformationPage(driver);
+//         String ACTUALPRODUCTNAME = proinfo.verfiyProductInformation();
+//    	 
+//    	 if(ACTUALPRODUCTNAME.contains(PRODUCTNAME)) {
+//    		 System.out.println("PASS : PRODUCT IS CREATED");
+//    	 }
+//    	 else {
+//    		 System.out.println("PASS : PRODUCT IS NOT CREATED");
+//    	 }
     	 hp.clickOnSignOutLink(driver);
  		 driver.quit();
 		} 

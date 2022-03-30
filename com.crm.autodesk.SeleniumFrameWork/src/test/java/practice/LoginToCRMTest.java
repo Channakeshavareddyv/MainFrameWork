@@ -10,13 +10,18 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.testng.annotations.Test;
+
+import com.crm.autodesk.GenericUtility.IPathConstant;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class LoginToCRMTest {
-     public static void main(String[] args) throws IOException {
+	
+         @Test	
+         public void test() throws IOException {
     	 
-    	 FileInputStream fin = new FileInputStream(".\\src\\main\\resources\\CommonData\\crenditials.properties");
+    	 FileInputStream fin = new FileInputStream(IPathConstant.FILE_PATH);
     	 Properties properties = new Properties();
     	 properties.load(fin);
     	 String browser = properties.getProperty("browser");
@@ -52,6 +57,7 @@ public class LoginToCRMTest {
     	 driver.findElement(By.name("user_name")).sendKeys(username);
     	 driver.findElement(By.name("user_password")).sendKeys(password);
     	 driver.findElement(By.id("submitButton")).click();
+    	 driver.quit();
     	 
 	}
 	

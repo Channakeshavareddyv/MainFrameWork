@@ -1,4 +1,4 @@
-package practice;
+package com.crm.autodesk.contacttest;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -132,7 +132,7 @@ public class CreateContactWithDateTest {
     	 Actions action = new Actions(driver);
  		 action.moveToElement(driver.findElement(By.xpath("//img[@src='themes/softed/images/user.PNG']"))).perform();
  		 driver.findElement(By.linkText("Sign Out")).click();
-    	 //driver.quit();
+    	 driver.quit();
 	}
 	
 }

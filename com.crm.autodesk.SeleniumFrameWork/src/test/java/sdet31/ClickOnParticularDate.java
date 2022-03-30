@@ -33,6 +33,7 @@ public class ClickOnParticularDate {
 		}catch(Exception e) {
 			driver.findElement(By.xpath("//span[@aria-label='Next Month']")).click();
 		}
+		driver.quit();
 	  }
 	}
 
